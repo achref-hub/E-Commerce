@@ -3,12 +3,14 @@ import styles from './auth.module.scss'
 import loginImg from '../../assets/login.jpg'
 import { Link } from 'react-router-dom'
 import {FaGoogle} from 'react-icons/fa'
+import Card from '../../components/card/Card'
 const login = () => {
   return (
     <section className={`container ${styles.auth }`}>
         <div className={styles.img}>
             <img src={loginImg} alt="Login"/>
         </div>
+        <Card>
         <div className={styles.form}>
             <h2>Login</h2>
             <form>
@@ -20,13 +22,14 @@ const login = () => {
                 </div>
                 <p>-- or --</p>
             </form>
+           
             <button className='--btn --btn-danger --btn-block'> <FaGoogle color='#fff'/>  Login With Google</button>
             <span className={styles.register}>
                 <p>Don't have an account ?</p>
                 <Link to='/register'> Please Register</Link>
             </span>
         </div>
-        
+        </Card>
     </section>
   )
 }
