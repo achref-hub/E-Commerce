@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Home (){
+const register = () => {
   return (
     <div>
+      
     </div>
   )
 }
 
+export default register

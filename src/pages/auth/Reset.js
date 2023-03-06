@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Home (){
+const reset = () => {
   return (
     <div>
+      
     </div>
   )
 }
 
+export default reset
