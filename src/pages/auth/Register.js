@@ -1,10 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import styles from './auth.module.scss'
-import registerImg from '../../assets/register.png'
-import Card from '../../components/card/Card'
-const register = () => {
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styles from './auth.module.scss';
+import registerImg from '../../assets/register.png';
+import Card from '../../components/card/Card';
+
+export default function register () {
+
   return (
+    <>
     <section className={`container ${styles.auth }`}>
       
         <Card>
@@ -26,7 +29,6 @@ const register = () => {
             <img src={registerImg} alt="Register"/>
         </div>
     </section>
-  )
-}
-
-export default register
+    </>
+  );
+};
